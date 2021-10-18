@@ -1,9 +1,13 @@
 name: unit-test
 
-on: [pull_request]
+on:
+  workflow_run:
+    workflows: ["Notify unit test"]
+    types:
+      - completed
 
 jobs:
-  test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
