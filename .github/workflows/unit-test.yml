@@ -1,9 +1,13 @@
 name: unit-test
 
-on: [pull_request]
+on:
+  workflow_run:
+    workflows: ["Notify unit test"]
+    types:
+      - completed
 
 jobs:
-  test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -19,7 +23,7 @@ jobs:
 
       - name: install dependencies
         if: steps.cached-dependencies.outputs.cache-hit != 'true'
-        uses: php-actions/composer@v6
+        uses: php-actions/composer@v5
 
       - name: run tests
         run: composer run test
