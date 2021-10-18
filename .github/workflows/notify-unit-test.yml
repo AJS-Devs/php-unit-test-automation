@@ -1,0 +1,12 @@
+name: notify-unit-test
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: notifying unit-test workflow
+        run: echo 'done'
+
+

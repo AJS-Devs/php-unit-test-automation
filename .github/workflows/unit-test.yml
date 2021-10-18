@@ -1,6 +1,10 @@
 name: unit-test
 
-on: [pull_request_target]
+on:
+  workflow_run:
+    workflows: ["notify-unit-test"]
+    types:
+      - completed
 
 jobs:
   test:
