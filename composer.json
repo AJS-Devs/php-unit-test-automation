@@ -15,8 +15,5 @@
             "AJSDev\\": "lib"
         }
     },
-    "require": {},
-    "scripts": {
-        "test" : "phpunit"
-    }
+    "require": {}
 }
