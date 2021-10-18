@@ -42,4 +42,13 @@ class SomethingTest extends TestCase {
 	public function should_equal_true_one_more() {
 		$this->assertTrue(Something::weird());
 	}
+
+	/**
+	 * @test
+	 * @group weird
+	 * @covers ::weird()
+	 */
+	public function should_equal_true_extra() {
+		$this->assertTrue(Something::weird());
+	}
 }
