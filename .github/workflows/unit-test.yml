@@ -2,7 +2,7 @@ name: unit-test
 
 on:
   workflow_run:
-    workflows: ["notify-unit-test"]
+    workflows: ["Notify unit test"]
     types:
       - completed
 

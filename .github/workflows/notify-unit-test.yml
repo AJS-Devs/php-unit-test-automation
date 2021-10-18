@@ -1,4 +1,4 @@
-name: notify-unit-test
+name: Notify unit test
 
 on: [pull_request]
 
