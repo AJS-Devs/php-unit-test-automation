@@ -19,7 +19,7 @@ jobs:
 
       - name: install dependencies
         if: steps.cached-dependencies.outputs.cache-hit != 'true'
-        uses: php-actions/composer@v6
+        uses: php-actions/composer@v5
 
       - name: run tests
         run: composer run test
