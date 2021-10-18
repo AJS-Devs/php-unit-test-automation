@@ -15,4 +15,13 @@ class SomethingTest extends TestCase {
 	public function should_equal_true() {
 		$this->assertTrue(Something::weird());
 	}
+
+	/**
+	 * @test
+	 * @group weird
+	 * @covers ::weird()
+	 */
+	public function should_equal_true_another() {
+		$this->assertTrue(Something::weird());
+	}
 }
