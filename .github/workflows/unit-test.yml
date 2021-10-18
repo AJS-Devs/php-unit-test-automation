@@ -1,10 +1,6 @@
 name: unit-test
 
-on:
-  workflow_run:
-    workflows: ["Notify unit test"]
-    types:
-      - completed
+on: [pull_request]
 
 jobs:
   test:
