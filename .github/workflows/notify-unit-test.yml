@@ -4,7 +4,7 @@ name: Notify unit test
 on: [pull_request]
 
 jobs:
-  test:
+  notify:
     runs-on: ubuntu-latest
     steps:
       - name: notifying unit-test workflow
